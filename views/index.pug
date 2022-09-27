@@ -1,0 +1,44 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title My Fitness
+    style 
+        include ../static/style.css
+  html
+  head
+  body
+    header.header
+      // left box for logo
+      .left
+        //- img(src='/static/gym.jpg', alt='')
+        div My Fitness
+      // mid box for navbar
+      .mid
+        ul.navbar
+          li
+            a.active(href='/') Home
+          li
+            a(href='/') About Us
+          li
+            a(href='/') Fitness Calculator
+          li
+            a(href='/') Contact Us
+      // right box for buttons
+      .right
+        button.btn Call Us Now
+        button.btn Email Now
+    .container
+      h1 Join the best gym of Assam now
+      form(action="/", method="post")
+        .form-group
+          input(type='text', name='name', placeholder='Enter Your Name')
+        .form-group
+          input(type='number', name='age', placeholder='Enter Your Age')
+        .form-group
+          input(type='text', name='gender', placeholder='Enter Your Gender')
+        .form-group
+          input(type='email', name='email', placeholder='Enter Your Email')
+        button.btn Submit
