@@ -1,0 +1,10 @@
+git config --global user.name Pragyan
+git config --global user.email  parakhdas45@gmail.com
+touch .gitignore
+git init
+git add . 
+git commit -m "Initial Commit"
+git status #Just to check the status
+git remote add origin git@github.com:pragyan4261/GymWebsite.git
+ssh-keygen -t ed25519 -C "parakhdas45@gmail.com"
+git push origin master
